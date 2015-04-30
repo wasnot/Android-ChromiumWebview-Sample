@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "jp.freebit.chromiumtest"
+        applicationId "com.example.chromiumtest"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

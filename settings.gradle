@@ -1,1 +1,1 @@
-include ':app', ':chromeview', ':tintbrowseraddonframeworklibrary'
+include ':app', ':chromeview', ':tintbrowseraddonframeworklibrary', ':tintbrowser'
