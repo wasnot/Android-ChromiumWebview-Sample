@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 22
@@ -26,4 +27,22 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 //    compile 'com.android.support:appcompat-v7:22.1.0'
+}
+
+
+android.libraryVariants
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.mogoweb.chrome'
+            artifactId 'chromium-webview'
+            version '1.0'
+            artifact source: file("${project.buildDir}/outputs/aar/${project.name}-release.aar")
+        }
+    }
+    repositories {
+        maven {
+            url "file:${projectDir}/maven-repo"
+        }
+    }
 }

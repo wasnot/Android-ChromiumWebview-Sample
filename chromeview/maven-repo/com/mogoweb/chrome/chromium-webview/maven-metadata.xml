@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.mogoweb.chrome</groupId>
+  <artifactId>chromium-webview</artifactId>
+  <version>1.0</version>
+  <versioning>
+    <versions>
+      <version>1.0</version>
+    </versions>
+    <lastUpdated>20150430030030</lastUpdated>
+  </versioning>
+</metadata>
